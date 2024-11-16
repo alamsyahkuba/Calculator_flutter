@@ -49,7 +49,7 @@ class _CalculatorState extends State {
         //jika tombol = ditekan, output diubah menjadi hasil dari expression
         try {
           output = evaluateExpression(
-              output.replaceAll("x", "*").replaceAll("÷", "/"),
+              output.replaceAll("×", "*").replaceAll("÷", "/"),
               ); //evaluate expression adalah fungsi yang digunakan untuk menghitung hasil dari expression
         } catch (e) {
           //catch digunakan untuk menangani kesalahan yang terjadi ketika menghitung expression (contohnya jika user memasukkan fungsi yang tidak valid seperti 1++2 atau hanya +)
@@ -145,7 +145,7 @@ class _CalculatorState extends State {
                 buildButton("7", Colors.grey.shade600),
                 buildButton("8", Colors.grey.shade600),
                 buildButton("9", Colors.grey.shade600),
-                buildButton("x", Colors.orange),
+                buildButton("×", Colors.orange),
               ]),
               Row(children: [
                 buildButton("4", Colors.grey.shade600),
